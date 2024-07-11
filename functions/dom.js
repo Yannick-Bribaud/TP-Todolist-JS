@@ -15,3 +15,11 @@ export function createElement(tagName, attributes = {}){
     }
     return element
 }
+
+/** 
+ * @param {string} id 
+ * @returns {DocumentFragment}
+ */
+export function cloneTemplate(id){
+    return document.getElementById(id).content.cloneNode(true)
+}
